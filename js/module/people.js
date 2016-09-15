@@ -1,6 +1,6 @@
 //people module
 (function() {
-    var people = ['Will', 'Steve'];
+    var people = ['Steve', 'Alan'];
 
     //cache DOM
     var $el = $('#peopleModule');
