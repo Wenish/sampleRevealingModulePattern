@@ -11,7 +11,7 @@
 
 <body>
     <div class="hero-unit" id="statsModule"></div>
-    <script id="stats-template" type="text/template">
+    <script type="text/template" id="stats-template">
         <h2>Stats</h2>
         <strong>people: {{zahl}}</strong>
     </script>
@@ -22,7 +22,7 @@
         <input placeholder="name" type="text">
         <button id="addPerson">Add Person</button>
         <ul id="people">
-            <script id="people-template" type="text/template">
+            <script type="text/template" id="people-template">
                 <li>
                     <span>{{name}}</span>
                     <i class="del">X</i>
@@ -37,8 +37,8 @@
 
     <!-- js custom -->
     <script src="/js/module/pubsub.js"></script>
-    <script src="/js/module/people.js"></script>
     <script src="/js/module/stats.js"></script>
+    <script src="/js/module/people.js"></script>
 </body>
 
 </html>

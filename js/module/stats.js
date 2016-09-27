@@ -4,7 +4,7 @@
 
     //cache DOM
     var $stats = $('#statsModule');
-    var template = '<h2>Stats</h2><strong>people: {{zahl}}</strong>'
+    var template = $('#stats-template').html();
 
     //bind events
     events.on('peopleChanged', setPeople);

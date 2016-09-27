@@ -7,8 +7,7 @@
     var $button = $el.find('button');
     var $input = $el.find('input');
     var $ul = $el.find('ul');
-    var template = '<li><span>{{name}}</span><i class="del">X</i></li>'
-    console.log(template)
+    var template = $el.find('#people-template').html();
 
     //bind events
     $button.on('click', addPerson);
@@ -21,7 +20,6 @@
         for (var i = 0; i < people.length; i++) {
             var item = template;
             item = item.replace('{{name}}', people[i])
-            console.log(item)
             $ul.append(item)
         }
         events.emit("peopleChanged", people.length);
