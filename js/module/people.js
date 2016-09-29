@@ -22,10 +22,10 @@
             item = item.replace('{{name}}', people[i])
             $ul.append(item)
         }
-        function pushPeople(){
+        function pushPeopleChanged(){
           events.emit("peopleChanged", people.length)
         }
-        setTimeout(pushPeople, 0)
+        setTimeout(pushPeopleChanged, 0)
     }
 
     function addPerson(value) {
